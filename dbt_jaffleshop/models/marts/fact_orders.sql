@@ -7,18 +7,16 @@
     Try changing "table" to "view" below
 */
 
-{{ config(materialized='table') }}
+{{ 
+    config(materialized='table') 
+}}
 
-with source_data as (
-
-    select 1 as id
-    union all
-    select null as id
-
-)
-
-select *
-from source_data
+select c.id, o.order_date, o.status, p.payment_method, p.amount
+from {{ ref('stg_customers') }} c
+join {{ ref('stg_orders') }} o
+    on c.id = o.user_id
+join {{ ref('stg_payments') }} p
+    on o.id = p.order_id
 
 /*
     Uncomment the line below to remove records with null `id` values

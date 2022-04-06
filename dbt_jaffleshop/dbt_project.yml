@@ -7,7 +7,8 @@ version: '1.0.0'
 config-version: 2
 
 # This setting configures which "profile" dbt uses for this project.
-profile: 'dbt_jaffleshop'
+# profile: 'dbt_jaffleshop'
+profile: 'dbt_jaffleshop_bigquery'
 
 # These configurations specify where dbt should look for different types of files.
 # The `model-paths` config, for example, states that models in this project can be
@@ -34,5 +35,14 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   dbt_jaffleshop:
     # Config indicated by + and applies to all files under models/example/
-    example:
+    staging:
+      +materialized: table
+      +schema: staging_dbt_demo
+
+    marts:
+      +materialized: table
+      +schema: marts_dbt_demo
+    
+    analysis:
       +materialized: view
+      +schema: analysis_dbt_demo

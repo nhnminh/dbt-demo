@@ -1,0 +1,13 @@
+
+version: 2
+
+
+models:
+  
+  - name: top_5_payment_method
+    description: "Analyse the most used payment methods"
+    columns:
+      - name: payment_method
+        description: "The payment method"
+      - name: amount
+        description: "Sum of all payment by this method"

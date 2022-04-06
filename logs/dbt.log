@@ -1,0 +1,34 @@
+
+
+============================== 2022-04-06 14:53:13.646751 | 416ea485-d7f1-430a-9c7e-e5f757b40194 ==============================
+14:53:13.646751 [info ] [MainThread]: Running with dbt=1.0.2
+14:53:13.647198 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='/Users/hy48yu/.dbt', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, project_name='dbt-demo-jaffleshop', skip_profile_setup=False, defer=None, state=None, cls=<class 'dbt.task.init.InitTask'>, which='init', rpc_method=None)
+14:53:13.647394 [debug] [MainThread]: Tracking: tracking
+14:53:13.693193 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7f685635b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7f98bd5fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7f98bd8460>]}
+14:53:32.540786 [debug] [MainThread]: Starter project path: /Users/hy48yu/opt/miniconda3/envs/sparkenv/lib/python3.9/site-packages/dbt/include/starter_project
+14:53:35.601413 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7f685556d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7f685555e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7f68555400>]}
+
+
+============================== 2022-04-06 14:53:46.296645 | 30e53604-c901-4d28-8eac-86e71cc2d0c8 ==============================
+14:53:46.296645 [info ] [MainThread]: Running with dbt=1.0.2
+14:53:46.297012 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='/Users/hy48yu/.dbt', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, project_name='dbt_jaffleshop', skip_profile_setup=False, defer=None, state=None, cls=<class 'dbt.task.init.InitTask'>, which='init', rpc_method=None)
+14:53:46.297194 [debug] [MainThread]: Tracking: tracking
+14:53:46.316916 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd83037c670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd8210c5fa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd8210c8970>]}
+14:53:46.318737 [debug] [MainThread]: Starter project path: /Users/hy48yu/opt/miniconda3/envs/sparkenv/lib/python3.9/site-packages/dbt/include/starter_project
+14:54:35.085876 [info ] [MainThread]: 
+Your new dbt project "dbt_jaffleshop" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+14:54:35.086352 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd830380940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd830380730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd8108c8a90>]}
